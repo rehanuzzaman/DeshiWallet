@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/30ad6389ff.js" crossorigin="anonymous"></script>
+
     <style>
         h3 {
             font-size: 10px;
@@ -24,22 +27,22 @@
         <header>
             <nav class="flex justify-around items-center">
                 <div class="flex justify-center items-center">
-                    <img class="w-16" src="./assets/icon.png" alt="">
-                    <div>
-                        <h1 class="text-3xl font-bold">$4500</h1>
-                        <p class="text-gray-400">Available Balance</p>
+                    <img class="w-16" src="./assets/user.webp" alt="">
+                    <div class="ml-2">
+                        <h1 class="text-xl font-bold">Magna User</h1>
+                        <p class="text-gray-400">Premium Member</p>
                     </div>
                 </div>
-                <button class="btn border-2 text-white bg-red-600 rounded-md">Logout</button>
+                <button class="btn border-2 text-white bg-red-600 rounded-md">Logout<i class="fa-solid fa-arrow-right-from-bracket"></i></button>
             </nav>
             <section class="m-10">
                 <div class="bg-white border-b-8 border-b-green-600 rounded-lg p-16 text-center shadow-sm mb-10">
-                    <h1 class="font-bold text-4xl text-green-600">$4500</h1>
+                    <h1 class="font-bold text-4xl text-green-600">৳4500</h1>
                     <p class="text-gray-400">Available Balance</p>
                 </div>
                 <h1 class="font-bold text-2xl">Welcome to DeshiWallet🔥</h1>
                 <p class="text-gray-400">
-                    Enjoy easy and convenient financial services with us with countrywide access.
+                    Enjoy easy and convenient financial services with countrywide access.
                 </p>
 
                 <div class="cards grid grid-cols-3 gap-2 mt-5">
@@ -74,7 +77,7 @@
                     <form class="card-body">
                         <fieldset class="fieldset">
                             <label class="fieldset-label">Bank</label>
-                            <select class="select">
+                            <select class="select" required>
                                 <option disabled selected>Select</option>
                                 <option value="Bank Asia PLC">Bank Asia PLC</option>
                                 <option value="BRAC Bank PLC">BRAC Bank PLC</option>
