@@ -46,11 +46,11 @@
                 </p>
 
                 <div class="cards grid grid-cols-3 gap-2 mt-5">
-                    <div class="box p-4 text-center rounded-lg bg-white shadow-sm">
+                    <div id="add-money-box" class="box p-4 text-center rounded-lg bg-white shadow-sm">
                         <img class="mx-auto" src="./assets/wallet1.png" alt="">
                         <h3>Add Money</h3>
                     </div>
-                    <div class="box p-4 text-center rounded-lg bg-white shadow-sm">
+                    <div id="cash-out-box" class="box p-4 text-center rounded-lg bg-white shadow-sm">
                         <img class="mx-auto" src="./assets/purse1.png" alt="">
                         <h3>Cash Out</h3>
                     </div>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
 
-                <section class="mx-auto justify-center items-center mt-16">
+                <section id="addmoney" class="mx-auto justify-center items-center mt-16">
                     <h2 class="font-bold text-xl text-gray-500">Add Money</h2>
                     <form class="card-body">
                         <fieldset class="fieldset">
@@ -97,34 +97,28 @@
                     </form>
                 </section>
 
-                <section>
+                <section id="cashout" class="mx-auto justify-center items-center mt-16">
                     <h2 class="font-bold text-xl text-gray-500">Cash Out</h2>
                     <form class="card-body">
                         <fieldset class="fieldset">
-                            <label class="fieldset-label">Bank</label>
-                            <select class="select" required>
-                                <option disabled selected>Select</option>
-                                <option value="Bank Asia PLC">Bank Asia PLC</option>
-                                <option value="BRAC Bank PLC">BRAC Bank PLC</option>
-                                <option value="City Bank PLC">City Bank PLC</option>
-                                <option value="Dutch Bangla Bank PLC">Dutch Bangla Bank PLC</option>
-                                <option value="Islamic Bank Bangladesh PLC">Islamic Bank Bangladesh PLC</option>
-                                <option value="Standard Chartered Bank">Standard Chartered Bank</option>
-                            </select>
-                            <label class="fieldset-label">Bank Account Number</label>
+                            <label class="fieldset-label">Agent Number</label>
                             <input id="" type="number" class="input" placeholder="XXX XXX XXXX" required>
                             <label class="fieldset-label">Amount</label>
                             <input id="amount" type="number" class="input" placeholder="Amount" required>
                             <label class="fieldset-label">Password</label>
                             <input id="pin" type="password" class="input" placeholder="Password" required>
-                            <button id="add-money" class="btn bg-green-600 text-white mt-4">Add Money</button>
+                            <button id="cash-out" class="btn bg-green-600 text-white mt-4">Cash Out</button>
                         </fieldset>
                     </form>
                 </section>
             </section>
         </header>
     </section>
+
+    <!--Scripts-->
     <script src="./scripts/addMoney.js"></script>
+    <script src="./scripts/cashOut.js"></script>
+    <script src="./scripts/toggle.js"></script>
 </body>
 
 </html>
