@@ -29,7 +29,7 @@
                 <div class="flex justify-center items-center">
                     <img class="w-12" src="./assets/user.webp" alt="" onclick="alert('Ei Dustu, Touch Koro Na!')">
                     <div class="ml-2">
-                        <h1 class="text-xl font-bold">Magna User</h1>
+                        <h1 class="text-xl font-bold">User 01</h1>
                         <p class="text-gray-400 text-xs">Premium Member (Chapa)</p>
                     </div>
                 </div>
@@ -74,6 +74,31 @@
 
                 <section class="mx-auto justify-center items-center mt-16">
                     <h2 class="font-bold text-xl text-gray-500">Add Money</h2>
+                    <form class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label">Bank</label>
+                            <select class="select" required>
+                                <option disabled selected>Select</option>
+                                <option value="Bank Asia PLC">Bank Asia PLC</option>
+                                <option value="BRAC Bank PLC">BRAC Bank PLC</option>
+                                <option value="City Bank PLC">City Bank PLC</option>
+                                <option value="Dutch Bangla Bank PLC">Dutch Bangla Bank PLC</option>
+                                <option value="Islamic Bank Bangladesh PLC">Islamic Bank Bangladesh PLC</option>
+                                <option value="Standard Chartered Bank">Standard Chartered Bank</option>
+                            </select>
+                            <label class="fieldset-label">Bank Account Number</label>
+                            <input id="" type="number" class="input" placeholder="XXX XXX XXXX" required>
+                            <label class="fieldset-label">Amount</label>
+                            <input id="amount" type="number" class="input" placeholder="Amount" required>
+                            <label class="fieldset-label">Password</label>
+                            <input id="pin" type="password" class="input" placeholder="Password" required>
+                            <button id="add-money" class="btn bg-green-600 text-white mt-4">Add Money</button>
+                        </fieldset>
+                    </form>
+                </section>
+
+                <section>
+                    <h2 class="font-bold text-xl text-gray-500">Cash Out</h2>
                     <form class="card-body">
                         <fieldset class="fieldset">
                             <label class="fieldset-label">Bank</label>
