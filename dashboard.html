@@ -33,7 +33,7 @@
                         <p class="text-gray-400 text-xs">Premium Member (Chapa)</p>
                     </div>
                 </div>
-                <button class="btn border-2 text-white bg-red-600 rounded-md"><a href="./index.html">Logout</a><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                <button id="logout" class="btn border-2 text-white bg-red-600 rounded-md"><a href="./index.html">Logout</a><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
             </nav>
             <section class="m-10">
                 <div class="bg-white border-b-8 border-b-green-600 rounded-lg p-16 text-center shadow-sm mb-10">
@@ -104,7 +104,7 @@
                             <label class="fieldset-label">Agent Number</label>
                             <input id="" type="number" class="input" placeholder="XXX XXX XXXX" required>
                             <label class="fieldset-label">Amount</label>
-                            <input id="amount" type="number" class="input" placeholder="Amount" required>
+                            <input id="cashout-amount" type="number" class="input" placeholder="Amount" required>
                             <label class="fieldset-label">Password</label>
                             <input id="pin" type="password" class="input" placeholder="Password" required>
                             <button id="cash-out" class="btn bg-green-600 text-white mt-4">Cash Out</button>
@@ -119,6 +119,7 @@
     <script src="./scripts/addMoney.js"></script>
     <script src="./scripts/cashOut.js"></script>
     <script src="./scripts/toggle.js"></script>
+    <script src="./scripts/logout.js"></script>
 </body>
 
 </html>
